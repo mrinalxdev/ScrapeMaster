@@ -4,7 +4,7 @@
   "description": "This is the node and React project for the chat application which is built by Mrinal Pramanick",
   "main": "index.js",
   "scripts": {
-    "start": "nodemone index.js"
+    "start": "nodemon index.js"
   },
   "repository": {
     "type": "git",
