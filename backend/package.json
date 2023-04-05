@@ -1,0 +1,19 @@
+{
+  "name": "chat-app",
+  "version": "1.0.0",
+  "description": "This is the node and React project for the chat application which is built by Mrinal Pramanick",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrinalxdev/chat-app.git"
+  },
+  "author": "Mrinal Pramanick",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrinalxdev/chat-app/issues"
+  },
+  "homepage": "https://github.com/mrinalxdev/chat-app#readme"
+}
