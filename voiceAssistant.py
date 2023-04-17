@@ -15,5 +15,5 @@ def sptext():
             print("Recognizing your Voice ....")
             data = recognizer.recognizer_google(audio)
             print(data)
-        except Exception as e:
-            raise e
+        except sr.UnknownValueError:
+            print("Not Understanding")
