@@ -13,7 +13,11 @@ def sptext():
         audio = recognizer.listen(source)
         try:
             print("Recognizing your Voice ....")
-            data = recognizer.recognizer_google(audio)
+            data = recognizer.recognize_google(audio)
             print(data)
         except sr.UnknownValueError:
-            print("Not Understanding")
+            print("Not Understanding")gi
+
+def speechtx():
+    engine = pyttsx3.init()
+    
