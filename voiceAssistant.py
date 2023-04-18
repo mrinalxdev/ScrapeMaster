@@ -16,8 +16,14 @@ def sptext():
             data = recognizer.recognize_google(audio)
             print(data)
         except sr.UnknownValueError:
-            print("Not Understanding")gi
+            print("Not Understanding")
 
-def speechtx():
+def speechtx(x):
     engine = pyttsx3.init()
+    voices = engine.getProperty('voices')
+    engine.setProperty('voice', voices[0].id)
+    rate = engine.getProperty('rate')
+    engine.setProperty('rate', 150)
+    engine.say(x)
+    engine.runAndWait()
     
