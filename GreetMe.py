@@ -14,7 +14,7 @@ def speak(audio):
 def greetMe():
     hour = int(datetime.datetime.now().hour)
     if hour>=0 and hour <= 12:
-        speak("Good Morning Sir")
+        speak(f"Good Morning Sir, the time is {hour}")
     elif hour > 12 and hour <= 18:
         speak ("Good Evening Sir")
     else :

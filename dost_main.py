@@ -37,5 +37,11 @@ if __name__ == "__main__" :
             while True: 
                 query = takeCommand().lower()
                 if "go to sleep" in query:
-                    speak("Sala Khali peeli itna mehnat Karwaya")
+                    speak("Gratitude towards you Sir . Thank you for using me")
                     break
+                elif "hello" in query:
+                    speak("Greetings sir, How may I help you ?")
+                elif "whats your status ?" in query:
+                    speak("Currently running on my full potential. The RNN network is at its full bandwidth")
+                elif "Can you check the the RNN status report" in query:
+                    speak("The RNN tests are running succesfully, this time I scored 8764 out of ten thousand test cases . May I mail you the results sir")
