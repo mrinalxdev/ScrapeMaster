@@ -14,9 +14,9 @@ def speak(audio):
 def greetMe():
     hour = int(datetime.datetime.now().hour)
     if hour>=0 and hour <= 12:
-        speak("Uth ja bro")
+        speak("Good Morning Sir")
     elif hour > 12 and hour <= 18:
-        speak ("Sham hogaya hai")
+        speak ("Good Evening Sir")
     else :
-        speak ("Ratt hogaya hai")
-    speak ("bol bhai kya karna hai")
+        speak ("Good Night, But I am ready to take your command")
+    speak ("Order me sir I am ready !")

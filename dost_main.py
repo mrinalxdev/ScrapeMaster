@@ -26,3 +26,16 @@ def takeCommand():
         print("Say that again")
         return "None"
     return query
+
+if __name__ == "__main__" :
+    while True:
+        query = takeCommand().lower()
+        if "wake up" in query:
+            from GreetMe import greetMe
+            greetMe()
+
+            while True: 
+                query = takeCommand().lower()
+                if "go to sleep" in query:
+                    speak("Sala Khali peeli itna mehnat Karwaya")
+                    break
