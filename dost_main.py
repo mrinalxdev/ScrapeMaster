@@ -52,4 +52,11 @@ if __name__ == "__main__" :
                     speak("welcome sir")
 
                 elif "google" in query:
-                    From 
+                    from SearchNow import searchGoogle
+                    searchGoogle(query)
+                elif "youtube" in query:
+                    from SearchNow import searchYoutube
+                    searchYoutube(query)
+                elif "wikipedia" in query:
+                    from SearchNow import searchWiki
+                    searchWiki(query)
