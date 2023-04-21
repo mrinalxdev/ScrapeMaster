@@ -43,8 +43,13 @@ if __name__ == "__main__" :
                 elif "hello" in query:
                     speak("Greetings sir, How may I help you ?")
                 elif "what's your status" in query:
-                    speak("Currently running on my full potential. The HMM network is at its full bandwidth")
-                elif "Can you check the the RNN status report" in query:
-                    speak("The HMM tests are running succesfully, this time I scored 8764 out of ten thousand test cases . May I mail you the results sir")
+                    speak("Currently running on my full potential. The markov model network is at its full bandwidth")
+                elif "give me the test results" in query: 
+                    speak("this time i scored 8972 out of ten thousand test cases .")
                 elif "model status" in query:
                     speak("The diagnosis were not upto the marks sir . I am still unable to work on myself ! Sorry for the underperformance")
+                elif "ok thank you for the information" in query:
+                    speak("welcome sir")
+
+                elif "google" in query:
+                    From 

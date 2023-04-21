@@ -18,3 +18,19 @@ def takeCommand():
         print("Say that again")
         return "None"
     return query
+
+query = takeCommand().lower()
+
+engine = pyttsx3.init("sapi5")
+voices = engine.getProperty("voices")
+engine.setProperty("voice", voices[0].id)
+engine.setProperty("rate", 170)
+
+
+def speak(audio):
+    engine.say(audio)
+    engine.runAndWait()
+
+def searchGoogle(query):
+    if "google" in query:
+        import 
