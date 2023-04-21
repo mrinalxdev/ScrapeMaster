@@ -3,6 +3,8 @@ import pyttsx3
 import pywhatkit
 import wikipedia
 import webbrowser
+import sys
+sys.stdout.reconfigure(encoding='utf-8')
 
 def takeCommand():
     r = speech_recognition.Recognizer()
@@ -62,5 +64,11 @@ def searchYoutube(query):
 def searchWiki(query):
     if "wikipedia" in query:
         speak("Searching from wikipedia....")
+        query = query.replace("wikipedia", "")
+        query = query.replace("search wikipedia", "")
+        query = query.replace("dost", "")
+        result = wikipedia.summary(query,sentences = 2)
+        print(result)
+        speak(result)
 
     
