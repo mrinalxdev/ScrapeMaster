@@ -1,9 +1,11 @@
 import pyttsx3 
 import speech_recognition
+import requests
+from bs4 import BeautifulSoup
 
 engine = pyttsx3.init("sapi5")
 voices = engine.getProperty("voices")
-engine.setProperty("voice", voices[0].id)
+engine.setProperty("voice", voices[1].id)
 engine.setProperty("rate", 170)
 
 
@@ -60,3 +62,7 @@ if __name__ == "__main__" :
                 elif "wikipedia" in query:
                     from SearchNow import searchWiki
                     searchWiki(query)
+                elif "temprature" in query: 
+                    search = "temprature in varanasi"
+                    url = f"https://www.google.com/search?q={search}"
+                    r = requests.get(url)
