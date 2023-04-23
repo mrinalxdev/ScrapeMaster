@@ -1,3 +1,3 @@
-### "DOST" a voice assistant for All
+# "DOST" a voice assistant for All
 
-`**Currently Under Development**`
+`Currently Under Development`

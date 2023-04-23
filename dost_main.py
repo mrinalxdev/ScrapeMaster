@@ -54,7 +54,7 @@ if __name__ == "__main__" :
                 elif "ok thank you for the information" in query:
                     speak("welcome sir")
 
-                elif "open" in query:
+                # elif "open" in query:
                     
 
 
