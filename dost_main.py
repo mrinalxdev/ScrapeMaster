@@ -53,11 +53,19 @@ if __name__ == "__main__" :
                     speak("The diagnosis were not upto the marks sir . I am still unable to work on myself ! Sorry for the underperformance")
                 elif "ok thank you for the information" in query:
                     speak("welcome sir")
+                elif "status analysis" in query:
+                    speak("the reports are not satified sir")
 
-                # elif "open" in query:
+
+
+                elif "open" in query:
+                    from Dictapp import openappweb
+                    openappweb(query)
+                elif "close" in query:
+                    from Dictapp import closeappweb
+                    closeappweb(query)
                     
-
-
+                
                 elif "google" in query:
                     from SearchNow import searchGoogle
                     searchGoogle(query)
@@ -89,3 +97,4 @@ if __name__ == "__main__" :
                 elif "finally sleep" in query:
                     speak("Going to sleep ")
                     exit()
+                    
